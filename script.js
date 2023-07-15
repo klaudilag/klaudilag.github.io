@@ -4,14 +4,8 @@ $(document).ready(function() {
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
 
-<<<<<<< HEAD
   var availableBoards = {};
   var availableTasks = {};
-=======
-  var apiRoot = 'https://kodillamanyprojects2.klaudiuszlagodz.repl.co/v1/tasks';
-  var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
-  var tasksContainer = $('[data-tasks-container]');
->>>>>>> 7c191e34fbcff35c66ceb93fd8a881b874bb87af
 
   // init
 
@@ -203,7 +197,6 @@ $(document).ready(function() {
 
   $('[data-task-add-form]').on('submit', handleTaskSubmitRequest);
 
-<<<<<<< HEAD
   $tasksContainer.on('change','[data-board-name-select]', handleBoardNameSelect);
   $tasksContainer.on('click','[data-trello-card-creation-trigger]', handleCardCreationRequest);
   $tasksContainer.on('click','[data-task-edit-button]', toggleEditingState);
@@ -211,10 +204,3 @@ $(document).ready(function() {
   $tasksContainer.on('click','[data-task-submit-update-button]', handleTaskUpdateRequest);
   $tasksContainer.on('click','[data-task-delete-button]', handleTaskDeleteRequest);
 });
-=======
-  tasksContainer.on('click','[data-task-edit-button]', toggleEditingState);
-  tasksContainer.on('click','[data-task-edit-abort-button]', toggleEditingState);
-  tasksContainer.on('click','[data-task-submit-update-button]', handleTaskUpdateRequest);
-  tasksContainer.on('click','[data-task-delete-button]', handleTaskDeleteRequest);
-});
->>>>>>> 7c191e34fbcff35c66ceb93fd8a881b874bb87af
